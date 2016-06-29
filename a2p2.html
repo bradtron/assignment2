@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+    <script>
+        //Assign 2 Part 2 Math and Math Functions
+        
+        /*
+        //Step1
+        var numVal = window.prompt("Enter a number:");
+        window.console.log("Positive value of number is: " + Math.abs(numVal));
+        */
+        
+        /*
+        //Step2
+        var numVal2 = window.prompt("Enter a floating point number:");
+        window.console.log("Roundup of number is: " + Math.round(numVal2));
+        */
+        
+        /*
+        //Step3
+        var numVal3 = window.prompt("Enter a floating point number:");
+        window.console.log("Round down of number is: " + Math.floor(numVal3)); 
+        */
+        
+        /*
+        //Step4  
+        var strNums = window.prompt("Enter a comma seperated list of 5 numbers:");
+        var arrNums = new Array();
+        arrNums = strNums.split(",");
+        var numSmall, numLarge;
+        numSmall = arrNums[0];
+        numLarge = arrNums[0];
+        for (var i = 1; i <= arrNums.length; i++){
+            if (+arrNums[i] < numSmall){
+                numSmall = +arrNums[i];   
+            }
+            if (+arrNums[i] > numLarge){
+                numLarge = +arrNums[i];   
+            }
+        }
+        window.console.log("Largest is " + numLarge);
+        window.console.log("Smallest is " + numSmall);
+        */
+        
+        /*
+        //Step5
+        var strNum1 = window.prompt("Enter a number:");
+        var numSQRT = Math.sqrt(strNum1);
+        window.console.log(numSQRT);
+        */
+        
+        //PART2 Date and Date Functions
+        
+        /*
+        //Step6
+        strDate = new Date();
+        window.console.log(strDate);
+        */  
+          
+        /*
+        //Step7 
+        function getDaysInMonth(month,year) {
+            return new Date(year, month, 0).getDate();            
+        }
+        window.console.log(getDaysInMonth(1, 2016)); 
+        */
+        
+        /*
+        //Step8
+        var monthNames = ["January", "February", "March", "April", "May", "June",
+                          "July", "August", "September", "October", "November", "December"];
+        var d = new Date();
+        window.console.log("The current month is " + monthNames[d.getMonth()]);
+        */
+        
+        /*
+        //Step9 
+        var myDate = new Date();
+        myDate.setFullYear(2016);
+        myDate.setMonth(5);
+        myDate.setDate(12);
+        if(myDate.getDay() == 6 || myDate.getDay() == 0){ 
+            window.alert('Weekend!');
+        }else{
+            window.alert('Weekday!');
+        }
+        */
+        
+        /*
+        //Step10 
+        var myDate2 = new Date();
+        var d_names = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        
+        myDate2.setDate(myDate2.getDate()-1);
+        var curr_day  = myDate2.getDay();
+        
+        window.console.log(d_names[curr_day]);
+        */
+         
+        /*
+        //Step11
+        var d = new Date();
+        var n = d.getDay();
+        var strChar;
+        switch (n) {
+            case 0:
+               strChar = "S"; break; 
+            case 1:   
+               strChar = "M"; break; 
+            case 2:   
+               strChar = "T"; break; 
+            case 3:    
+               strChar = "W"; break;
+            case 4: 
+               strChar = "T"; break;  
+            case 5:     
+               strChar = "f"; break;
+            case 6:
+               strChar = "S"; break;
+        }
+        window.console.log(strChar); 
+        */   
+           
+    //PART3 Conditional Logic and Looping
+        
+        /*
+        //Step12 
+        var intNum1 = window.prompt("Enter first number:");
+        var intNum2 = window.prompt("Enter second number:");
+        var intLarge = intNum1;
+        if (+intNum2 > +intNum1){
+            intLarge = intNum2;  
+        }
+        document.write("Larger number is " + intLarge);
+        */
+        
+        /*
+        //Step13
+        var arrStudents = ["Ursula","Paul","Henry","Tabitha","Lucy"];
+        var arrGrades   = [   80   ,  77  ,  88   ,   95    ,  68  ];
+        var arrLetters   = [   "F"  ,  "F" ,  "F"  ,   "F"   ,  "F" ];
+        
+        for (var i = 0; i < 5; i++){
+            if (arrGrades[i] < 60){
+                arrLetters[i] = "F";
+            }else if(arrGrades[i] < 70){
+                arrLetters[i] = "D"; 
+            }else if(arrGrades[i] < 80){
+                arrLetters[i] = "C"; 
+            }else if(arrGrades[i] < 90){
+                arrLetters[i] = "B";
+            }else if(arrGrades[i] <= 100){
+                arrLetters[i] = "A";
+            }    
+        }
+        
+        for (var i = 0; i < arrStudents.length; i++){
+            window.console.log(arrStudents[i]+" "+arrLetters[i]);
+        }
+        */
+        
+        /*
+        //Step14 
+        for (var i = 1; i <= 15; i++){
+            if (i % 2 == 0){
+                window.console.log("Number " + i + " is even");
+            }else{
+                
+                window.console.log("Number " + i + " is odd");
+            }
+        }
+        */
+        
+        /*
+        //Step15 
+         for (var i = 1; i <= 100; i++){     
+            if ((i % 3 == 0) && (i % 5 == 0)) {
+                window.console.log(i + " FizzBuzz");
+            }else if (i % 3 == 0){
+                window.console.log(i + " Fizz");
+            }else if (i % 5 == 0) {
+                window.console.log(i + " Buzz");
+            }   
+        }
+         */
+        
+    //PART4 Hitchhiker's Guide to Galaxy
+        
+        /*
+        //Step1
+        var boolResp = window.confirm("Do you want to play this game?");
+        if (boolResp == true){
+            window.alert("Awesome, our hero is waiting!");
+        }else{
+            window.alert("Too bad, we're going to play anyway because our hero deperately needs your help!");
+        }
+        */
+        
+        /*
+        //Step2 
+        window.alert("You are in a dark, dingy, and humid cave searching for the lost treasure of Captain Chingadera.  You are disoriented, lost and hungry and extremely thirsty.  You see a speck of light in the distance ahead of you, something simmering to your right, and the sound of running water on your left.  Your back is against the wall...");
+        */
+        
+        /*
+        //Step3
+        var strDir = window.prompt("Which direction would you like to head (please enter forward, left, or right)");
+        */
+        
+        /*
+        //Step4
+        switch (strDir){
+            case "forward":
+                window.alert("You walk about 100 yards and safely make your way out of the cave.");
+                break;
+            case "left":
+                window.alert("Your thirst has gotten the better of you.  You trip on a rock, hit your head, and fall into a pool of water and drown.");
+                break;    
+            case "right":
+                window.alert("You found the gold.  You jump into a pile of gold to celebration and immediately a hidden door slams down and traps you in the room forever.");
+                break;
+            default:
+                window.alert("The ghost of Captain Chingadera has condemned you to eternal damnation and you shall now burn in the hot excoriation for lifeless lowlifes for not choosing the correct option...loser.");
+        }
+        */
+        
+        /*
+        //Step5
+        var strRating = window.prompt("Please rate this game on a scale of 1 to 10");
+        */
+        
+        /*
+        //Step6
+        if (+strRating > 10) strRating = 10;
+        
+        if (+strRating >= 6 && +strRating <= 10){
+            window.alert("Thank you, we will continue to improve the game.");
+        }else{
+            window.alert("Whatever, you weren't very good at the game anyway");
+        }   
+        */
+        
+    //PART5 Coin Fliip
+        
+        /*
+        //Step1
+        var coinFlip = Math.random();
+        */
+        
+        /*
+        //Step2 
+        choice = window.prompt("Heads or Tails");
+        */
+        
+        /*
+        //Step3
+        var result;
+        if (coinFlip < 0.5){
+            result = "heads";
+        }else{
+            result = "tails";
+        }
+        */
+        
+        /*
+        //Step4, 5, 6, and 7
+        if (result == "heads" && choice == "heads"){
+            window.alert("The flip was heads and you chose heads, you win!");
+        }else if(result == "heads" && choice == "tails" ){
+            window.alert("The flip was heads and you chose tails, you lose!");
+        }else if(result == "tails" && choice == "heads" ){
+            window.alert("The flip was tailss and you chose heads, you lose!.");
+        }else{
+            window.alert("The flip was tails and you chose tails, you win!");
+        }
+        */
+        
+        /*
+        //Step8
+        coinFlip = Math.round(Math.random());
+        coinFlip = Math.floor(Math.random()*2);
+        //document.write(coinFlip);
+
+        var result2;
+        if (coinFlip == 0){
+            result2 = "heads";
+        }else{
+            result2 = "tails";
+        }
+        */
+        
+    //PART6 Coin Flip Redux
+       
+        /*
+        //Step1
+        var coinFlip2;
+        */
+        
+        /*
+        //Step2, 3 and 4
+        for (var i = 1; i <= 10; i++){ 
+            coinFlip2 = Math.round(Math.random());
+            if (coinFlip2 == 0){
+                document.write("heads" + "<br>");
+            }else{
+                document.write("tails" + "<br>");
+            }    
+         }
+         */
+        
+    //PART7 Coin Flip Streak
+        
+        /*
+        //Step1
+        var coinFlip3;
+        */
+        
+        /*
+        //Step2, 3, 4, 5
+        do {
+           //Step3 
+           coinFlip3 = Math.round(Math.random());
+           //Step4
+           if (coinFlip == 0){
+              window.console.log("Heads"); 
+           }else{
+              window.console.log("Tails"); 
+           }
+           //Step5  
+        } while (coinFlip3 == 1)
+        */
+    
+    //PART8 Looping a triangle
+    
+    /*
+    var strOut = "";
+    for (var i = 1; i <= 7; i++){
+        for (var j = 1; j <= i; j++){
+            strOut = strOut + "#";
+        }
+        window.console.log(strOut);
+        strOut = "";
+    }
+    */
+            
+    //PART9 Odd or Even ?
+      
+    /*
+    for(var i = 1; i <= 15; i++){
+        if (i % 2 == 0){
+            window.console.log(i + " is even");
+        }else{
+            window.console.log(i + " is odd");            
+        }     
+    }
+    */
+    
+    </script>       
+    </body>
+</html>
